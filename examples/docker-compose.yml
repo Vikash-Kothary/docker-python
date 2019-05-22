@@ -1,0 +1,23 @@
+version: '3'
+
+services:
+  python-ubuntu:
+    image: vikash-kothary/python:3.7-ubuntu19.04
+    container_name: python_ubuntu
+    restart: always
+    stdin_open: true
+    tty: true
+
+  python-alpine:
+    image: vikash-kothary/python:3.7-alpine3.9
+    container_name: python_alpine
+    restart: always
+    stdin_open: true
+    tty: true
+
+  python-distroless:
+    image: vikash-kothary/python:3.7-distroless
+    container_name: python_distroless
+    restart: always
+    stdin_open: true
+    tty: true
